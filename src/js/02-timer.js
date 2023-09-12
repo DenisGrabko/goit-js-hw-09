@@ -58,6 +58,10 @@ document.addEventListener("DOMContentLoaded", function () {
       if (timeRemaining.days === 0 && timeRemaining.hours === 0 &&
         timeRemaining.minutes === 0 && timeRemaining.seconds === 0) {
         clearInterval(timerInterval);
+        daysElement.textContent = '00';
+        hoursElement.textContent = '00';
+        minutesElement.textContent = '00';
+        secondsElement.textContent = '00';
         return;
       }
 
